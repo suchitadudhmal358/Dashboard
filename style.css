@@ -4,14 +4,23 @@
 
 }
 
+
 hr{
     box-sizing: content-box;
     
 }
+
+a{
+    background-color: transparent;
+}
+
+a:hover{
+    color: #224abe;
+}
 .sidebar{
     width: 15rem;
     /* background-color: #000; */
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* .nav-bar{
@@ -86,11 +95,72 @@ hr{
     color: rgba(255,255,255,.4);;
 }
 
-/* .sidebar .nav-item .nav-link[data-toggle="collapse"]::after{
-    font-family: "Font Awesome";
+ 
+
+
+.sidebar .nav-item .nav-link[data-toggle="collapse"]::after{
+   
     content: "\f107";
     width: 1rem;
     text-align: center;
     float: right;
+    font-family: Font Awesome 5 Free;
 
-} */
+}
+
+.box{
+    margin: 0 1rem;
+}
+
+.s-box{
+    padding: .5rem 0;
+    font-size: .85rem;
+    margin: 0 0 1rem 0;
+}
+
+.heading{
+    margin: 0;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+    font-size: .65rem;
+    font-weight: 800;
+    color: #b7b9cc;;
+}
+
+.itmes{
+    display: block;
+    margin: .5rem;
+    padding: .5rem 1rem;
+    color: #3a3b45;
+    text-decoration: none;
+    border-radius: .35rem;
+    font-size: .85rem;
+    
+}
+
+.s-box a:hover{
+    background-color: #eaecf4;   
+}
+
+.s-box a.active{
+    color: #4e73df;
+    font-weight: 700;
+}
+
+.sidebar #sidebarToggle::after{
+    content: '\f104';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    /* font: var(--fa-font-solid); */
+    
+}
+
+.topbar{
+    height: 4.5rem;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
+}
+
+.svg-inline--fa.fa-sm{
+    font-size: .875rem;
+
+}

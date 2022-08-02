@@ -1,55 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-body">
-        <ul class="sidebar navbar-nav bg-gradient-primary">
-            <a class="sidebar-tag d-flex justify-content-center align-items-center" href="#">
-                <div class="icon rotate"><i class='fas fa-laugh-wink '></i></div>
-                <div class="tag mx-3">SB Admin</div>
-            </a>
-            <hr class=" my-0">
-            <li class="nav-item"><a class="nav-link d-flex  align-items-center" href="#"><i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-            </li>
-            <hr class=" my-0">
-            <div class="sidebar-heading">
-                interface
+    <div class="main-body d-flex">
+      <ul class="sidebar navbar-nav bg-gradient-primary">
+        <a
+          class="sidebar-tag d-flex justify-content-center align-items-center"
+          href="#"
+        >
+          <div class="icon rotate"><i class="fas fa-laugh-wink"></i></div>
+          <div class="tag mx-3">SB Admin</div>
+        </a>
+        <hr class="my-0" />
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#"
+            ><i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+        <hr class="my-0" />
+        <div class="sidebar-heading">interface</div>
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            href="#collapseTwo"
+            data-bs-toggle="collapse"
+           
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Components</span></a
+          >
+          <div id="collapseTwo" class="collapse box">
+            <div class="bg-white py-2 collapse-inner rounded s-box">
+              <h6 class="collapse-header heading">Custom Components</h6>
+              <a class="collapse-item itmes" href="#">Buttons</a>
+              <a class="collapse-item itmes" href="#">Cards</a>
             </div>
-            <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Components</span></a>
-            </li>
-            <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span></a>
-            </li>
-            <hr class=" my-0">
-            <div class="sidebar-heading">
-                Addons
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            href="#collapseUtilities"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            aria-controls="collapseUtilities"
+          >
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Utilities</span>
+        </a>
+            <div id="collapseUtilities" class="collapse box">
+                <div class="bg-white py-2 collapse-inner rounded s-box">
+                    <h6 class="collapse-header heading">Utilities</h6>
+                    <a class="collapse-item itmes" href="#">Colors</a>
+                    <a class="collapse-item itmes" href="#">Borders</a>
+                    <a class="collapse-item itmes" href="#">Animations</a>
+                    <a class="collapse-item itmes" href="#">Other</a>        
+                </div>
             </div>
-            <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span></a>
-            </li>
-            <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-            <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-        </ul>
+        </li>
+        <hr class="my-0" />
+        <div class="sidebar-heading">Addons</div>
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            href="#collapsePages"
+            data-bs-toggle="collapse"
+            aria-expanded="true"
+            aria-controls="collapsePages"
+          >
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Pages</span></a>
+            <div id="collapsePages" class="collapse box">
+                <div class="bg-white py-2 collapse-inner rounded s-box">
+                    <h6 class="collapse-header heading">Login Screens</h6>
+                    <a class="collapse-item itmes" href="#">Login</a>
+                    <a class="collapse-item itmes" href="#">Register</a>
+                    <a class="collapse-item itmes" href="#">Forgot Password</a>
+                    <hr class="collapse-divider">
+                    <h6 class="collapse-header heading">Other Pages</h6>
+                    <a class="collapse-item itmes" href="#">404 Page</a>  
+                    <a class="collapse-item itmes" href="#">Blank Page</a>      
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            href="#"
+           
+          >
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Charts</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex align-items-center"
+            href="#"
+           
+          >
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tables</span></a
+          >
+        </li>
+        <hr class="my-0 d-none d-md-inline" />
+        <div class="text-center d-none d-md-block">
+            <button id="sidebarToggle" class="rounded-circle border-0 mt-2" ></button>
+        </div>
+      </ul>
+
+      <div id="content-wrapper" class="d-flex flex-column w-100">
+        <div id="content">
+            <nav class="navbar navbar-expand navbar-light bg-white static-top mb-4 topbar">
+                <button id="sideToggle" class="btn btn-link d-md-none rounded-circle mr-3 ">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search fa-sm"></i></button>
+                  </form>
+                
+            </nav>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
   </body>
 </html>
