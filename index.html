@@ -18,7 +18,7 @@
   <body>
     <div class="main-body d-flex">
       <!-- Sidebar -->
-      <ul class="sidebar navbar-nav bg-gradient-primary">
+      <ul class="sidebar navbar-nav bg-gradient-primary " id="sidebar-menu">
         <a
           class="sidebar-tag d-flex justify-content-center align-items-center"
           href="#"
@@ -130,7 +130,7 @@
       <div id="content-wrapper" class="d-flex flex-column w-100">
         <div id="content">
             <nav class="navbar navbar-expand navbar-light bg-white static-top mb-4 topbar justify-content-between">
-                <button id="sideToggle" class="btn btn-link d-md-none rounded-circle me-3 ">
+                <button id="sideToggle"  class="btn btn-link d-md-none rounded-circle me-3 " data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-expanded="false" aria-controls="sidebar-menu">
                     <i class="fa fa-bars"></i>
                 </button>
                 <form class=" d-none  d-sm-inline-block form-inline mr-auto my-2 margin-left  navbar-search" role="search">
