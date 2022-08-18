@@ -1,26 +1,29 @@
-
-*{
-    box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
 
-
-hr{
-    box-sizing: content-box;
-    
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #858796;
 }
 
-a{
-    background-color: transparent;
+hr {
+  box-sizing: content-box;
 }
 
-a:hover{
-    color: #224abe;
+a {
+  background-color: transparent;
 }
-.sidebar{
-    width: 15rem;
-    /* background-color: #000; */
-    min-height: 100vh;
+
+a:hover {
+  color: #224abe;
+}
+.sidebar {
+  width: 14rem;
+  /* background-color: #000; */
+  min-height: 100vh;
 }
 
 /* .nav-bar{
@@ -31,20 +34,19 @@ a:hover{
     padding: 0;
 } */
 
-.bg-gradient-primary{
-    background-color: #5777d4
-   
+.bg-gradient-primary {
+  background-color: #5777d4;
 }
 
-.sidebar-tag{
-    height: 4.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    padding: 1.25rem 1rem;
+.sidebar-tag {
+  height: 4.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 1.25rem 1rem;
 }
 
 /* .sidebar .sidebar-tag .icon i{
@@ -55,112 +57,225 @@ a:hover{
     font-weight: 900;
 } */
 
-.svg-inline--fa {
-    height: 2rem;
-    margin-right: 0.25rem;
-    font-size: .85rem;
-    /* color: rgba(255, 255, 255, 0.568); */
-}
-.rotate{
-    transform: rotate(-15deg);
+.sidebar .svg-inline--fa {
+  height: 2rem;
+  margin-right: 0.25rem;
+  font-size: 0.85rem;
+  /* color: rgba(255, 255, 255, 0.568); */
 }
 
-.tag{
-    display: inline;
+.rotate {
+  transform: rotate(-15deg);
+}
+
+.tag {
+  display: inline;
 }
 
 .sidebar hr {
+  margin: 0 1rem 1rem;
+  color: #fff;
+  box-sizing: content-box;
+  border-top: 2px solid rgba(233, 216, 216, 0.637);
+  opacity: 1;
+}
+
+.sidebar .nav-item .nav-link {
+  color: #fff;
+  width: 14rem;
+  padding: 1rem;
+  text-align: left;
   
-   margin: 0 1rem 1rem;
-   color: #fff;
-   box-sizing: content-box;
-   border-top:  2px solid rgba(233, 216, 216, 0.637);
-   opacity: 1;
 }
 
+.sidebar-heading {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+}
 
-.sidebar .nav-item .nav-link{
+.sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
+  content: "\f107";
+  width: 1rem;
+  text-align: center;
+  float: right;
+  font-family: Font Awesome 5 Free;
+}
+
+.box {
+  margin: 0 1rem;
+}
+
+.s-box {
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  margin: 0 0 1rem 0;
+}
+
+.heading {
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #b7b9cc;
+}
+
+.itmes {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #3a3b45;
+  text-decoration: none;
+  border-radius: 0.35rem;
+  font-size: 0.85rem;
+}
+
+.s-box a:hover {
+  background-color: #eaecf4;
+}
+
+.s-box a.active {
+  color: #4e73df;
+  font-weight: 700;
+}
+
+.sidebar #sidebarToggle::after {
+  content: "\f104";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  /* font: var(--fa-font-solid); */
+}
+
+.topbar {
+  height: 4.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.svg-inline--fa .fa-sm {
+  font-size: 0.85rem;
+}
+
+.navbar-search {
+  width: 25rem;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.topbar .navbar-search input {
+  font-size: 0.85rem;
+}
+
+.topbar ul li a {
+  text-decoration: none;
+  color: #d1d3e2;
+}
+.topbar ul li a:hover {
+  color: #858796;
+}
+
+.topbar .nav-item .nav-link {
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  position: relative;
+}
+.text-gray-600 {
+  color: #858796;
+}
+
+.text-gray-800 {
+  color: #5a5c69;
+}
+
+.bottom-container {
+  padding: 0.5rem 1.5rem;
+}
+
+.head-text {
+  text-transform: uppercase;
+  color: #4e73df;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.border-start-primary {
+  border-left: 0.25rem solid #4e73df;
+}
+
+.border-start-success {
+  border-left: 0.25rem solid #1cc88a;
+}
+
+.border-start-success {
+  border-left: 0.25rem solid #1cc88a;
+}
+.border-start-info {
+  border-left: 0.25rem solid #36b9cc;
+}
+.border-start-warning {
+  border-left: 0.25rem solid #f6c23e;
+}
+
+.progress-height {
+  height: 0.5rem;
+}
+
+.text-gray-300 {
+  color: #dddfeb;
+}
+
+.progress-bar-primary {
+  color: #4e73df;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
+
+.sticky-footer {
+  padding: 2rem 0;
+  flex-shrink: 0;
+}
+
+.copyright-style {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 6.5rem;
+    /* background-color: #000; */
+    min-height: 100vh;
+  }
+
+
+.sidebar .nav-item .nav-link {
     color: #fff;
-    width: 14rem;
-    padding: 1rem;
-
-}
-
-.sidebar-heading{
-    text-transform: uppercase;
-    font-size: .65rem;
-    font-weight: 800;
-    padding: 0 1rem;
-    margin-top: 1rem;
-    color: rgba(255,255,255,.4);;
-}
-
- 
-
-
-.sidebar .nav-item .nav-link[data-toggle="collapse"]::after{
-   
-    content: "\f107";
-    width: 1rem;
+    width: 6.5rem;
+    padding:.75rem 1rem;
     text-align: center;
-    float: right;
-    font-family: Font Awesome 5 Free;
-
-}
-
-.box{
-    margin: 0 1rem;
-}
-
-.s-box{
-    padding: .5rem 0;
-    font-size: .85rem;
-    margin: 0 0 1rem 0;
-}
-
-.heading{
-    margin: 0;
-    padding: .5rem 1.5rem;
-    text-transform: uppercase;
+    flex-direction: column;
     font-size: .65rem;
-    font-weight: 800;
-    color: #b7b9cc;;
-}
-
-.itmes{
-    display: block;
-    margin: .5rem;
-    padding: .5rem 1rem;
-    color: #3a3b45;
-    text-decoration: none;
-    border-radius: .35rem;
-    font-size: .85rem;
     
+  }
+
+  .tag{
+      display: none;
+  }
 }
 
-.s-box a:hover{
-    background-color: #eaecf4;   
-}
 
-.s-box a.active{
-    color: #4e73df;
-    font-weight: 700;
-}
-
-.sidebar #sidebarToggle::after{
-    content: '\f104';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    /* font: var(--fa-font-solid); */
-    
-}
-
-.topbar{
-    height: 4.5rem;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
-}
-
-.svg-inline--fa.fa-sm{
-    font-size: .875rem;
-
-}
