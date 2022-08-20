@@ -270,9 +270,9 @@
               </div>
             </form>
 
-            <ul class="nav ml-auto">
-              <li class="nav-item dropdownmx-1">
-                <a class="nav-link dropdown-toggle"  aria-current="page" href="#">
+            <ul class="nav ml-auto top-navigation">
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle"  aria-current="page" href="#" role="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fas fa-bell fa-fw position-relative">
                     <span
                       class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -282,6 +282,56 @@
                     </span>
                   </i>
                 </a>
+
+                <div class="dropdown-menu dropdown-menu-end dropdown-list  " iaria-labelledby="notification">
+                  <h6 class="dropdown-header text-uppercase bg-primary text-white notification-header rounded-top">Alerts center</h6>
+                  <a href="#" class="dropdown-item d-flex align-items-center text-dark  text-wrap">
+                    <div class="me-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <div class="small date">December 19, 2022</div>
+                      <span class="fw-bold">A new monthly report is ready to download!</span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="dropdown-item d-flex align-items-center text-dark text-wrap">
+                    <div class="me-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <div class="small date">December 12, 2022</div>
+                     
+                      $290.29 has been deposited into your account!
+                                    
+                    </div>
+                  </a>
+
+                  <a href="#" class="dropdown-item d-flex align-items-center text-dark text-wrap">
+                    <div class="me-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <div class="small date">December 12, 2022</div>
+                     
+                      
+                      Spending Alert: We've noticed unusually high spending for your account.
+                                    
+                                    
+                    </div>
+                  </a>
+
+                 
+                </div>
               </li>
               <li class="nav-item mx-1">
                 <a class="nav-link" href="#"
