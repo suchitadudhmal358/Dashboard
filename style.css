@@ -21,6 +21,10 @@ a {
 a:hover {
   color: #224abe;
 }
+
+.small{
+  font-size: 80%;
+}
 .sidebar {
   width: 14rem;
   /* background-color: #000; */
@@ -585,6 +589,85 @@ color: #000;
 
 .bg-gray-900 {
   background-color: #3a3b45;
+}
+
+/* Border Page */
+
+
+.border-bottom-primary {
+  border-bottom: 0.25rem solid #4e73df;
+}
+
+.border-left-secondary {
+  border-left: 0.25rem solid #858796;
+}
+
+.border-bottom-secondary {
+  border-bottom: 0.25rem solid #858796;
+}
+
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a;
+}
+
+.border-bottom-success {
+  border-bottom: 0.25rem solid #1cc88a;
+}
+
+.border-left-info {
+  border-left: 0.25rem solid #36b9cc;
+}
+
+.border-bottom-info {
+  border-bottom: 0.25rem solid #36b9cc;
+}
+
+.border-left-warning {
+  border-left: 0.25rem solid #f6c23e;
+}
+
+.border-bottom-warning {
+  border-bottom: 0.25rem solid #f6c23e;
+}
+
+.border-left-danger {
+  border-left: 0.25rem solid #e74a3b;
+}
+
+.border-bottom-danger {
+  border-bottom: 0.25rem solid #e74a3b;
+}
+
+.border-left-dark {
+  border-left: 0.25rem solid #5a5c69;
+}
+
+.border-bottom-dark {
+  border-bottom: 0.25rem solid #5a5c69;
+}
+
+
+/* Animation Page */
+.animated--grow-in{
+  -webkit-animation-name: growIn;
+  animation-name: growIn;
+  animation-duration: 2s;
+}
+
+.animated--fade-in{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+/* Others page */
+
+.rotate-15{
+  transform: rotate(15deg);
+}
+
+.rotate-n-15{
+  transform: rotate(-15deg);
 }
 
 @media screen and (max-width: 768px) {

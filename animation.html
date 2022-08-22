@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SM Color Utilities</title>
+    <title>SM Animation Utilities</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -439,96 +439,120 @@
             </ul>
           </nav>
 
-          <!-- Cards -->
+          <!-- Dashboard -->
           <div class="container-fluid bottom-container">
-            
-              <h1 class="h3 mb-1 text-gray-800">Color Utilities</h1>
-              <p class="mb-4 colors-intro">Bootstrap's default utility classes can be found on the official <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a>  page. The custom utilities
+            <h1 class="h3 mb-1 text-gray-800">Animation Utilities</h1>
+              <p class="mb-4 colors-intro">Bootstrap's default utility classes can be found on the official  <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a>  page. The custom utilities
                 below were created to extend this theme past the default utility classes built into Bootstrap's
                 framework.</p>
-              
-           
-           
 
-            <!-- Colors  -->
+
             <div class="row">
-              <div class="col-lg-4">
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="fw-bold text-primary m-0"> Custom Text Color Utilities</h6> 
-                    </div>
-                    <div class="card-body">
-                        <p class="text-gray-100 p-3 bg-dark m-0">.text-gray-100</p>
-                        <p class="text-gray-200 p-3 bg-dark m-0">.text-gray-200</p>
-                        <p class="text-gray-300 p-3 bg-dark m-0">.text-gray-300</p>
-                        <p class="text-gray-400 p-3 bg-dark m-0">.text-gray-400</p>
-                        <p class="text-gray-500 p-3  m-0">.text-gray-500</p>
-                        <p class="text-gray-600 p-3  m-0">.text-gray-600</p>
-                        <p class="text-gray-700 p-3  m-0">.text-gray-700</p>
-                        <p class="text-gray-800 p-3  m-0">.text-gray-800</p>
-                        <p class="text-gray-900 p-3  m-0">.text-gray-900</p>
-                        
-                    </div>
-                </div>
-                <div class="card shadow mb-4">
-                  <div class="card-header py-3 ">
-                    <h6 class="fw-bold text-primary m-0">Custom Font Size Utilities</h6>
-                  </div>
-                  <div class="card-body">
-                        <p class="text-sm">
-                            .text-xs
-                        </p>
-                        <p class="text-lg">
-                            .text-lg
-                        </p>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-4">
+              <div class="col-lg-6 mb-4">
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="fw-bold text-primary m-0"> Custom Background Gradient Utilities
-                            </h6> 
+                        <div class="card-header py-3 align-items-center">
+                        <h6 class="fw-bold text-primary m-0">Grow In Animation Utilty</h6>
                         </div>
                         <div class="card-body">
-                            <div class="px-3 py-5 bg-gradient-primary text-white">.bg-gradient-primary</div>
-                            <div class="px-3 py-5 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
-                            <div class="px-3 py-5 bg-gradient-success text-white">.bg-gradient-success</div>
-                            <div class="px-3 py-5 bg-gradient-info text-white">.bg-gradient-info</div>
-                            <div class="px-3 py-5 bg-gradient-warning text-white">.bg-gradient-warning</div>
-                            <div class="px-3 py-5 bg-gradient-danger text-white">.bg-gradient-danger</div>
-                            <div class="px-3 py-5 bg-gradient-light text-dark">.bg-gradient-light</div>
-                            <div class="px-3 py-5 bg-gradient-dark text-white">.bg-gradient-dark</div>
-                        
-                            
+                                <div class="mb-3">
+                                    <code>.animated--grow-in</code>
+                                </div>
+                                <div class="small mb-1">Navbar Dropdown Example:</div>
+
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+                                    <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Navbar</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                        <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end animated--grow-in">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </nav>
+
+                                <p class="mb-0 small">Note: This utility animates the CSS transform property,
+                                    meaning it will override any existing transforms on an element being animated!
+                                    In this theme, the grow in animation is only being used on dropdowns within the
+                                    navbar.
+                                </p>  
                         </div>
                     </div>
               </div>
 
-              <div class="col-lg-4">
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="fw-bold text-primary m-0"> Custom Background Gradient Utilities
-                        </h6> 
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow mb-4 position-relative">
+                    <div class="card-header py-3 align-items-center">
+                    <h6 class="fw-bold text-primary m-0">Fade In Animation Utilty</h6>
                     </div>
                     <div class="card-body">
-                        <div class="p-3 bg-gray-100 text-dark">.bg-gray-100</div>
-                        <div class="p-3 bg-gray-200  text-dark">.bg-gray-200</div>
-                        <div class="p-3 bg-gray-300  text-dark">.bg-gray-300</div>
-                        <div class="p-3 bg-gray-400  text-dark">.bg-gray-400</div>
-                        <div class="p-3 bg-gray-500  text-white">.bg-gray-500</div>
-                        <div class="p-3 bg-gray-600  text-white">.bg-gray-600</div>
-                        <div class="p-3 bg-gray-700  text-white">.bg-gray-700</div>
-                        <div class="p-3 bg-gray-800  text-white">.bg-gray-800</div>
-                        <div class="p-3 bg-gray-900  text-white">.bg-gray-900</div>
-                    
-                        
+                            <div class="mb-3">
+                                <code>.animated--fade-in</code>
+                            </div>
+                            <div class="small mb-1">Navbar Dropdown Example:</div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+                                <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Navbar</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--grow-in">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </nav>
+
+                            <div class="small mb-1">
+                                Dropdown Button Example:
+                            </div>
+
+                            <div class="dropdown mb-4">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown
+                                </button>
+                                <div class="dropdown-menu animated--fade-in">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+
+                            <p class="mb-0 small">Note: This utility animates the CSS transform property,
+                                meaning it will override any existing transforms on an element being animated!
+                                
+                            </p>  
                     </div>
                 </div>
-          </div>
+              </div>
+
+              
+              
             </div>
 
+            
             <div class="sticky-footer">
               <div class="container text-center copyright-style my-auto">
                 <span> Copyright © Suchita Manohare 2022 </span>
